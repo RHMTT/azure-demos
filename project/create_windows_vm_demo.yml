@@ -61,13 +61,18 @@
             access: Allow
             priority: 1003
             direction: Inbound
-          - name: WINRM
+          - name: WINRM-HTTP
             protocol: Tcp
-            destination_port_range: 5986
+            destination_port_range: 5985
             access: Allow
             priority: 1004
             direction: Inbound
-
+          - name: WINRM-HTTPS
+            protocol: Tcp
+            destination_port_range: 5986
+            access: Allow
+            priority: 1005
+            direction: Inbound
     - name: Create virtual network interface card
       azure_rm_networkinterface:
         resource_group: "{{ resource_group_name }}"
