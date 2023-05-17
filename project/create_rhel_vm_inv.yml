@@ -3,6 +3,7 @@
   hosts: localhost
   connection: local
   gather_facts: false
+  vars_files: controller_vars.yml
   vars:
     resource_group_name: "azure-demo"
     region: "eastus"
