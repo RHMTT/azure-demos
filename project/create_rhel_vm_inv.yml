@@ -121,7 +121,7 @@
           version: latest
           
     - name: Add host
-      anwx.awx.host:
+      awx.awx.host:
         name: "{{ output_ip_address.state.ip_address }}"
         inventory: "static"
         state: present
