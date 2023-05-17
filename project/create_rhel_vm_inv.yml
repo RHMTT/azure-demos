@@ -120,7 +120,7 @@
           version: latest
           
     - name: Add host
-      host:
+      ansible.controller.host:
         name: "{{ output_ip_address.state.ip_address }}"
         inventory: "static"
         state: present
