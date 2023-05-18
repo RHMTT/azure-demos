@@ -128,4 +128,6 @@
         controller_username: "{{ controller_user }}"
         controller_password: "{{ controller_pass }}"
         controller_host: "{{ controller_host }}"
+        enabled: true
+        
         
